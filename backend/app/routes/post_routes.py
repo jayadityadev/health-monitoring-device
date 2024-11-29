@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from models.models import Patient, Room, Appointment, Emergency, TabletSchedule
-from db.mongo_db import patients_collection, rooms_collection, appointments_collection, emergencies_collection, tablet_schedules_collection
+from models.models import Patient, Room, TabletSchedule
+from db.mongo_db import patients_collection, rooms_collection, emergencies_collection
 
 router = APIRouter()
 
@@ -24,7 +24,7 @@ async def create_room(room: Room):
     result = await rooms_collection.insert_one(room.dict())
     return {"_id": str(result.inserted_id)}
 
-@router.post("/emergencies")
-async def create_emergency(emergency: Emergency):
-    result = await emergencies_collection.insert_one(emergency.dict())
-    return {"_id": str(result.inserted_id)}
+# @router.post("/emergencies")
+# async def create_emergency(emergency: Emergency):
+#     result = await emergencies_collection.insert_one(emergency.dict())
+#     return {"_id": str(result.inserted_id)}

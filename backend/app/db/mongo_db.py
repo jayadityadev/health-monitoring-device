@@ -1,7 +1,8 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 
-MONGO_URI = "mongodb://localhost:27017"
-client = AsyncIOMotorClient(MONGO_URI)
+uri = "mongodb://localhost:27017"
+#uri = "mongodb+srv://jayadityadev:<db_password>@cluster0.14qlx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+client = AsyncIOMotorClient(uri)
 database = client["health-device"]
 
 # Collections
