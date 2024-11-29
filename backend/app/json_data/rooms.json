@@ -1,0 +1,7 @@
+{
+    "_id": "room01",
+    "temperature": 22.5,
+    "live_footage": "http://example.com/rooms/room_101/live",
+    "emergency_status": false,
+    "last_updated": "2024-11-29T12:34:56Z"
+}

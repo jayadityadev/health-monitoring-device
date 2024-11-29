@@ -1,0 +1,8 @@
+{
+    "_id": "emergency_001",
+    "room_id": "room_101",
+    "patient_id": "patient_001",
+    "status": true,
+    "timestamp": "2024-11-29T12:45:00Z",
+    "resolved": false
+}

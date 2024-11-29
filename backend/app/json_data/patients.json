@@ -1,0 +1,28 @@
+[
+    {
+        "_id": "patient_001",
+        "name": "John Doe",
+        "dob": "1990-01-01",
+        "age": 34,
+        "sex": "Male",
+        "weight": 75,
+        "blood_group": "O+",
+        "photo": "http://example.com/photos/john_doe.jpg",
+        "medical_records": [
+            {
+                "date": "2024-11-28",
+                "condition": "Hypertension",
+                "prescriptions": ["Losartan 50mg daily", "Aspirin 75mg daily"]
+            }
+        ],
+        "appointments": [
+            {
+                "appointment_id": "appt_001",
+                "date": "2024-12-05",
+                "time": "10:00 AM",
+                "doctor": "Dr. Smith",
+                "purpose": "Routine checkup"
+            }
+        ]
+    }
+]

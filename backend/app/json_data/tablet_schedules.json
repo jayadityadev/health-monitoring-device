@@ -1,0 +1,21 @@
+{
+    "_id": "schedule_001",
+    "patient_id": "patient_001",
+    "medications": [
+        {
+            "name": "Losartan",
+            "dosage": "50mg",
+            "schedule": [
+                "2024-11-29T08:00:00Z",
+                "2024-11-29T20:00:00Z"
+            ]
+        },
+        {
+            "name": "Aspirin",
+            "dosage": "75mg",
+            "schedule": [
+                "2024-11-29T08:00:00Z"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "_id": "appt_001",
+    "patient_id": "patient_001",
+    "date": "2024-12-05",
+    "time": "10:00 AM",
+    "doctor": "Dr. Smith",
+    "purpose": "Routine checkup",
+    "status": "Scheduled"
+}
