@@ -5,7 +5,7 @@ client = AsyncIOMotorClient(MONGO_URI)
 database = client["health-device"]
 
 # Collections
-patients_collection = database["patients"]
+patients_collection = database["patient_data"]
 rooms_collection = database["rooms"]
 appointments_collection = database["appointments"]
 emergencies_collection = database["emergencies"]
