@@ -1,5 +1,17 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from db.mongo_db import patients_collection, emergencies_collection
+
+app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:4444/"],  # Allow the specific origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 router = APIRouter()
 
@@ -19,3 +31,5 @@ async def get_patients_data():
         patients_data.append(patient)
 
     return patients_data
+
+app.include_router(router)
